@@ -27,12 +27,12 @@ a:active {
   background-color: white;
   z-index: 9999;
   bottom: 0;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   box-shadow: 0px 20px 50px gray;
 }
 .StickyMenu .row {
-  height: 50px;
+  height: 75px;
   text-align: center;
   align-items: center;
 }
@@ -69,7 +69,7 @@ a:active {
 body {
   font-family: var(--font-primary);
   box-sizing: border-box;
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-100);
   padding: 25px 0 50px 0;
 }
 
@@ -109,13 +109,26 @@ header .container-fluid h1 {
   padding: 0 20px;
 }
 .searchForm__settings {
+  display: flex;
+  justify-content: center;
+  background-color: white;
   margin-left: 5px;
   max-width: 50px;
   max-height: 50px;
   padding-top: 9px;
-  background-color: var(--bs-gray-100);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-sec);
   flex-basis: 15%;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.filters .btn {
+  border-radius: var(--border-radius-sec);
+  background-color: var(--primary-color);
+  border: 0px;
 }
 
 .slider img {
@@ -211,7 +224,6 @@ header .container-fluid h1 {
 
 /* product.html*/
 .product__navigation {
-  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -315,7 +327,7 @@ header .container-fluid h1 {
 .--checkout .subtotal {
   color: #b3b8c5;
   text-align: left;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 15px 15px;
 }
 .--checkout .subtotal__prize {
   text-align: right;
@@ -338,7 +350,7 @@ header .container-fluid h1 {
 }
 .--checkout .checkout___button {
   width: 100%;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 15px 15px;
 }
 .--checkout .checkout___button button {
   width: 100%;
@@ -353,7 +365,6 @@ header .container-fluid h1 {
 /* profile.html*/
 .account__info {
   background-color: #ffffff;
-  margin-top: 2rem;
   padding: 25px;
   border-radius: var(--border-radius);
 }
@@ -365,6 +376,10 @@ header .container-fluid h1 {
 }
 
 .my__orders, .notifications, .gifts, .address__book, .payments__method, .contact, .social {
+  text-align: left;
   height: 50px;
   font-weight: 500;
+}
+.my__orders .col-9, .notifications .col-9, .gifts .col-9, .address__book .col-9, .payments__method .col-9, .contact .col-9, .social .col-9 {
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
